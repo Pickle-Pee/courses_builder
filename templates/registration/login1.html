@@ -1,5 +1,4 @@
 {% extends 'base.html' %} &nbsp;{% block content %}
-{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,44 +9,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
     <title>Регистрация</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-
     <div class="split left" id="">
         <div class="bloc_left">
             <img src="img/icon.svg" alt="" id='logo'>
                 <p id="reg">Регистрация</p>
                     <div id="reg_feild">
-                      <form action="{% url 'login' %}" method="post" class="form-login login">
+                      <form action="" method="post">
                         {% csrf_token %}
-                        <div class="form__input">
-                            <div class="form__input_gr">
-                                <input type="text" placeholder="Ваше имя" name="name" required>
-                            </div>
-                        </div>
-                        <div class="form__input">
-                            <div class="form__input_gr">
-                                <input type="email" placeholder="Ваш Email" name="email" required>
-                            </div>
-                        </div>
-                        <div class="form__input">
-                            <div class="form__input_gr">
-                                <input type="password" placeholder="Придумайте пароль" name="psw" required>
-                            </div>
-                        </div>
+                        <input type="text" placeholder="Ваше имя" name="name" required>                    
+                        <input type="email" placeholder="Ваш Email" name="email" required>  
+                        <input type="password" placeholder="Придумайте пароль" name="psw" required>
                       </form>
-                    </div>
-                    <div class="button_reg form__submit" >
-                        <input type="submit">
+                </div>                                          
+                    <div class="button_reg" >
                         <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.884 1.061L12.944 0L21.96 9.01599L12.944 18.032L11.884 16.971L19.089 9.76599H-4.95911e-05V8.26599H19.089L11.884 1.061Z" fill="white"/>
-                        </svg>
+                        </svg>                                
                         <span><a type="submit">Регистрация</span>
                     </div>
                         <div class="login_feild">
-                            <p>Уже есть аккаунт? <a href="#" id="a">Войти</a></p>
+                            <p>Уже есть аккаунт? <a href="#" id="a">Войти</a></p>                        
                         </div>
         </div>
 
@@ -60,7 +45,7 @@
 
 
 
-
+    
     <script src="js/jquery-3.6.0.min.js"></script>
 </body>
 </html>

@@ -6,5 +6,11 @@ from django.views import generic
 
 class SignUpView(generic.CreateView):
     form_class = UserCreationForm
-    success_url = reverse_lazy('login')
+    success_url = reverse_lazy('login1')
     template_name = 'signup.html'
+
+
+class SignUpViewTeacher(generic.CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy('login')
+    template_name = 'personal_user_page.html'

@@ -1,0 +1,336 @@
+@font-face {
+    font-family: Manrope;
+    src: url("../fonts/Manrope-Light.ttf");
+}
+
+@font-face {
+    font-family: Manrope-Bold;
+    src: url("../fonts/Manrope-Bold.ttf");
+}
+
+@font-face {
+    font-family: Manrope-Medium;
+    src: url("../fonts/Manrope-Medium.ttf");
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-family: Manrope;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+.text_logo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start;
+    width: 20%;
+}
+
+.user_plan {
+    display: flex;
+    width: 25%;
+}
+
+.user_info {
+    display: flex;
+    justify-content: end;
+    width: 40%;
+}
+
+.text_logo span {
+    font-family: Manrope;
+    font-size: 24px;
+    line-height: 5px;
+}
+
+.text_logo p {
+    font-family: Manrope;
+    font-size: 14px;
+}
+
+.user_photo {
+    border-radius: 50%;
+    background-color: #157AF0;
+}
+
+.side_menu {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.side_menu hr {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.menu_item {
+    width: 90%;
+    color: #157AF0;
+    border-radius: 3px;
+    padding: 10px 0 10px 10px;
+    margin: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu_item span {
+    padding-left: 12px;
+}
+
+.menu_item svg path {
+    fill:#157AF0;
+    stroke:#157AF0;
+    stroke-width:inherit;
+}
+
+.menu_item:hover {
+    color: white;
+    background: #4c9cff;
+    fill: white;
+    stroke: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+ 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ 
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: 'Manrope', sans-serif;
+  
+  
+}
+
+
+ 
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+ 
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+ 
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+ 
+/* Inherit fonts for inputs and buttons */
+ 
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    
+}
+
+.left {
+    background: #ffffff;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    padding-right: 90px;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.right {
+    right: 0;
+    background: #157AF0;
+    
+}
+
+.bloc_left{
+    width: 391px;
+    
+}
+
+.bloc_right{
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+
+#reg{
+    font-size: 48px;
+    line-height: 66px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #050505;
+    
+    
+    
+}
+
+#logo{
+    padding-bottom: 8px;
+}
+
+#reg_feild{
+  padding-bottom: 46px;
+    
+
+}
+
+.container{
+    display: block;
+    
+    
+}
+
+input[type=text], input[type=password], input[type="email"] {
+    width: 100%;
+    padding-top: 49px;
+    text-decoration: none;
+    background: none;
+    outline: 0;
+    border: 1px solid rgba(122, 135, 149, 0.35);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    appearance: none;
+  
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+input:hover{
+  transition: 1s;
+}
+
+input:focus::placeholder {
+  transform: translateY(-30px);
+  font-size: 14px;
+  line-height: 32px;
+  transition: 0.3s;
+}
+
+.button_reg{
+width: 391px;
+height: 64px;
+font-family: 'Manrope', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 27px;
+color: #FFFFFF;
+border-radius: 16px;
+border: none;
+background: #157AF0;
+outline: 0;
+display: flex;
+justify-content: center;
+justify-items: center;
+align-items: center;
+cursor: pointer;
+}
+
+.login_feild{
+  padding-top: 24px;
+  display: flex;
+justify-content: center;
+justify-items: center;
+align-items: center;
+}
+
+
+.button_reg span{
+  padding-left: 14px;
+} 
+
+
+.button_reg:hover{
+  transition: 0.07s;
+  background-color: #1068cc;
+  -ms-ransform: scale(3);
+}
+
+#a{
+  color: #157AF0;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
